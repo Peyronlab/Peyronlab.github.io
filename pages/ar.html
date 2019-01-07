@@ -6,7 +6,8 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false'>
-    <a-marker type='pattern' url='./pattern-marker.patt'>
+    <!--<a-marker type='pattern' url='./pattern-marker.patt'> -->
+    <a-marker preset='hiro'>
 	<a-entity>
         <a-animation attribute="rotation"
           dur="100000"
