@@ -3184,7 +3184,7 @@
 	manager.on('pinch', function(ev) {
 		if (!model) return
 		const curr = model.getAttribute('scale')
-		const scale = (ev.scale - 1)*0.01
+		const scale = (ev.scale - 1)*0.04
 		model.setAttribute('scale', {
 			'x': curr.x + scale,
 			'y': curr.y + scale,
