@@ -11,7 +11,7 @@
         init:function() {
           var element = document.querySelector('body');
           this.marker = document.querySelector('a-marker')
-          var model = getElementById('t-sne');
+          var model = document.querySelector('a-entity');
           this.markerVisible = false
       var hammertime = new Hammer(element);
       var pinch = new Hammer.Pinch();
@@ -58,7 +58,7 @@
     </script>
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false'>
        <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/Peyronlab/Peyronlab.github.io/master/pages/tsne.patt'>
-	<a-entity id='t-sne'>
+	<a-entity>
 <a-sphere position="1.63742971857817 0.906153052813552 -0.472288021859361" radius="0.02" color="#F564E3"></a-sphere>
 <a-sphere position="-0.0474380958219766 -0.109095052059927 0.100977741659798" radius="0.02" color="#DE8C00"></a-sphere>
 <a-sphere position="-0.0870441250408949 0.800259313446569 -0.733549695327595" radius="0.02" color="#7CAE00"></a-sphere>
