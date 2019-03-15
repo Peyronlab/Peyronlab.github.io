@@ -4,9 +4,8 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
 <script src="js/hammer.js"></script>
-
-  <body style='margin : 0px; overflow: hidden;'>
-  <script>
+<script>
+  
       AFRAME.registerComponent("foo",{
         init:function() {
           var element = document.querySelector('body');
@@ -15,6 +14,9 @@
           this.markerVisible = false
       var hammertime = new Hammer(element);
       var pinch = new Hammer.Pinch();
+      hammertime.get('pinch').set({ enable: true });
+
+hammertime.get('rotate').set({ enable: true });
       hammertime.add(pinch); // add it to the Manager instance
       
       hammertime.on('pan', (ev) => {
@@ -56,6 +58,8 @@
         }
       });
     </script>
+  <body style='margin : 0px; overflow: hidden;'>
+  
     <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false'>
        <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/Peyronlab/Peyronlab.github.io/master/pages/tsne.patt'>
 	<a-entity>
