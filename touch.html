@@ -3193,15 +3193,24 @@
 	})
 	const movingTouch = event => {
 		if (!model) return
-		const curr = model.getAttribute('rotation')
-		let touches = event.changedTouches
-		for (touch of touches) {
-			model.setAttribute('rotation', {
-				'x': curr.x - touch.pageX*0.01,
-				'y': curr.y,
-				'z': curr.z
-			})
-		}
+		let rotation = model.getAttribute("rotation")
+        switch(ev.direction) {
+          case 2:
+            rotation.y = rotation.y + 4
+            break;
+          case 4:
+            rotation.y = rotation.y - 4
+            break;
+          case 8:
+            rotation.x = rotation.x + 4
+            break;
+          case 16:
+            rotation.x = rotation.x - 4
+            break;
+          default:
+            break;
+        }
+        model.setAttribute("rotation", rotation)
 	}
 </script>
 </html>
