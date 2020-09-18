@@ -4,19 +4,34 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
-    var sceneEl = document.querySelector('a-scene');
+AFRAME.registerComponent('declare_vars', {
+var scene = document.querySelector('a-scene');
+
+if (scene.hasLoaded) {
+  run();
+} else {
+  scene.addEventListener('loaded', run);
+}
+
+function run () {
+  var sceneEl = document.querySelector('a-scene');
     var el = document.querySelector('#rel');
+    setTimeout(() => { el.destroy; }, 4000);
+}  
+
+});    
+    
     
 
-    <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false' >
+    <a-scene declare_vars embedded arjs='trackingMethod: best; debugUIEnabled: false' >
        <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/Peyronlab/Peyronlab.github.io/master/pages/tsne.patt'>
 	<a-entity id="rel">
         <a-animation attribute="rotation"
-          dur="14000"
+          dur="10000"
           easing="linear"
           from="0 0 0"
           to="0 0 360"
-          repeat="2"></a-animation>
+          repeat="indefinite"></a-animation>
         <a-sphere position="0.377836870831866 0.178811210902297 1.76905062586249" radius="0.02" color="#00BA38"></a-sphere>
 <a-sphere position="-0.351035473065953 0.663412005217635 1.18611655622901" radius="0.02" color="#00BA38"></a-sphere>
 <a-sphere position="0.299508663696666 0.678195053847395 1.29246511846961" radius="0.02" color="#00BA38"></a-sphere>
@@ -7763,7 +7778,6 @@
 <a-sphere position="-0.563843059855084 -0.964515149084962 -0.335762902198418" radius="0.02" color="#F8766D"></a-sphere>
     </a-entity>
 
-    el.destroy()
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
