@@ -3,27 +3,9 @@
 <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
+<script src="kill.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
-AFRAME.registerComponent('declare_vars', {
-var scene = document.querySelector('a-scene');
-
-if (scene.hasLoaded) {
-  run();
-} else {
-  scene.addEventListener('loaded', run);
-}
-
-function run () {
-  var sceneEl = document.querySelector('a-scene');
-    var el = document.querySelector('#rel');
-    setTimeout(() => { el.destroy; }, 4000);
-}  
-
-});    
-    
-    
-
-    <a-scene declare_vars embedded arjs='trackingMethod: best; debugUIEnabled: false' >
+    <a-scene kill embedded arjs='trackingMethod: best; debugUIEnabled: false' >
        <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/Peyronlab/Peyronlab.github.io/master/pages/tsne.patt'>
 	<a-entity id="rel">
         <a-animation attribute="rotation"
