@@ -3,11 +3,11 @@
 <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
-<script src="kill.js"> </script>
+<script src="rel-component.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene declare_vars embedded arjs='trackingMethod: best; debugUIEnabled: false' >
+    <a-scene tokill embedded arjs='trackingMethod: best; debugUIEnabled: false' >
        <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/Peyronlab/Peyronlab.github.io/master/pages/tsne.patt'>
-	<a-entity id="rel">
+	<a-entity id='rel'>
         <a-animation attribute="rotation"
           dur="10000"
           easing="linear"
