@@ -47,6 +47,12 @@ ul.posts li {
   width: 25%;
 }
 
+.column2 {
+  float: left;
+  width: 50%;
+}
+
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
