@@ -12,11 +12,14 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a, a:hover, a:focus, a:active {
-      text-decoration: none;
-      color: inherit;
- }
 
+a, a:focus, a:active  {
+    text-decoration: none;
+      color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
