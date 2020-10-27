@@ -81,3 +81,24 @@ table
 img:hover {
   border-color: black;
 }
+
+.container {
+    width: 100%;
+}
+
+.image {
+    width: 5%;
+    max-width: 12%;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.image:first-child {
+    margin: 0;
+}
