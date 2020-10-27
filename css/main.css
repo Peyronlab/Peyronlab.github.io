@@ -42,13 +42,11 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     float: right;
-    list-style-position: inside;
     
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    list-style-position: inside;
 }
 
 a, a:focus, a:active  {
@@ -84,12 +82,10 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
-    list-style-position: inside;
 }
 
 ul.posts li {
     list-style: none;
-    list-style-position: inside;
 }
 
 .column {
@@ -120,3 +116,7 @@ img:hover {
   border-color: black;
 }
 
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
