@@ -1,10 +1,10 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 50px auto;
+    width: 80%;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/head2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../content/head2.jpg");
   height: 40%;
   background-position: center;
   background-repeat: no-repeat;
