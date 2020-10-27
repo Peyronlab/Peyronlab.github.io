@@ -42,7 +42,8 @@ height: 40%;
     height: 400px;
       display: block;
   margin-left: auto;
-  margin-right: auto;}
+  margin-right: auto;
+ object-fit: cover;}
 
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
