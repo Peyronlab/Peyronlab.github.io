@@ -44,9 +44,6 @@ div.polaroid {
   }
 }
 
-.polaroid:hover {
-  box-shadow: 4px 8px 16px 6px Gainsboro;;
-}
 
 div.container {
   text-align: center;
@@ -148,8 +145,9 @@ table
     width:100%;
 }
 
-img:hover {
-  border-color: black;
+img {
+    max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -168,14 +166,9 @@ ul {
 /* First image (Logo. Full height) */
 .bgimg1 {
   background-image: url('../content/ban1.jpg');
-  min-height: 400px;
+  min-height: 100%;
 }
 
-/* First image (Logo. Full height) */
-.bgimg2 {
-  background-image: url('../content/head2.jpg');
-  min-height: 400px;
-}
 
 .parent {
   display: flex;
@@ -185,7 +178,11 @@ ul {
 .child {
   flex: 1 0 21%; /* explanation below */
   margin: 5px;
-  height: 400px;
+  height: 400vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  object-fit: cover;
+}
+
+.child:hover {
+  box-shadow: 4px 8px 16px 6px Gainsboro;;
 }
