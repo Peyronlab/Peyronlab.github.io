@@ -63,19 +63,18 @@ div.container {
  object-fit: cover;}
 
 
-div nav ul, footer ul {
-    font-family:'Pacifico';
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
     float: right;
+    font-style: 20px
     
 }
-nav ul li a, footer ul li a{
+nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    font-style: 20px
-
    
 }
 
