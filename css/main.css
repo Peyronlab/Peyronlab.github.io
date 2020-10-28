@@ -63,8 +63,8 @@ div.container {
  object-fit: cover;}
 
 
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+div nav ul, footer ul {
+    font-family:'Pacifico';
     padding: 0px;
     list-style: none;
     font-weight: bold;
