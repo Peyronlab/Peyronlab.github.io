@@ -180,6 +180,8 @@ ul {
 
 @media only screen and (max-width:749px) {
   .bgimg1 {
-    background-attachment: inherit;
+    display: none !important;
   }
 }
+
+.
