@@ -178,6 +178,13 @@ ul {
 }
 
 .child2 {
+  flex: 1 0 21%; /* project */
+  margin: 5px;
+  height: auto;
+ object-fit: cover;
+}
+
+.child3 {
   flex: 1 0 21%; /* avatar */
   margin: 5px;
   height: auto;
