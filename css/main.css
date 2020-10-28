@@ -36,13 +36,6 @@ div.polaroid {
  height:auto;
 }
 
-@media screen and (max-width: 650px) {
-  div.polaroid {
-    object-fit: cover;
-    width: 96%;
-    margin: 2%;
-  }
-}
 
 
 div.container {
@@ -181,4 +174,12 @@ ul {
 
 .child:hover {
   box-shadow: 4px 8px 16px 6px Gainsboro;;
+
+}
+
+
+@media only screen and (max-width:749px) {
+  .bgimg1 {
+    background-attachment: inherit;
+  }
 }
