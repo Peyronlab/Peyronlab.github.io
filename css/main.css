@@ -158,7 +158,7 @@ ul {
 /* First image (Logo. Full height) */
 .bgimg1 {
   background-image: url('../content/lab.jpg');
-  min-height: 400px;
+  min-height: 300px;
 }
 
 
@@ -202,11 +202,6 @@ ul {
 @media only screen and (max-width:749px) {
   .bgimg1 {
     display: none !important;
-  min-height: 100px;
 
   }
 }
-
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
