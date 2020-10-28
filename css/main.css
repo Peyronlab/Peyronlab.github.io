@@ -172,6 +172,13 @@ ul {
  object-fit: cover;
 }
 
+.child2 {
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ object-fit: cover;
+}
 .child:hover {
   box-shadow: 4px 8px 16px 6px Gainsboro;;
 
