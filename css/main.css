@@ -181,6 +181,8 @@ ul {
 @media only screen and (max-width:749px) {
   .bgimg1 {
     display: none !important;
+  min-height: 100px;
+
   }
 }
 
