@@ -157,3 +157,16 @@ ul {
     text-align: center;
     list-style-position: inside;
 }
+
+/* Create a Parallax Effect */
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../content/ban1.jpg');
+  min-height: 100%;
+}
+
