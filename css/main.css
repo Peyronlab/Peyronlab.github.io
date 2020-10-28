@@ -172,7 +172,20 @@ ul {
 }
 
 /* First image (Logo. Full height) */
-.bgimg1 {
+.bgimg2 {
   background-image: url('../content/head2.jpg');
   min-height: 400px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ object-fit: cover;
 }
