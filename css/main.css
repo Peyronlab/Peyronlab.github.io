@@ -69,12 +69,13 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     float: right;
+    font-style: 20px
     
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    font-style: 20px
+   
 }
 
 a, a:focus, a:active  {
