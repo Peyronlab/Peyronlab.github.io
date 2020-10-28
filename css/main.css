@@ -189,7 +189,7 @@ ul {
 }
 
 
-@media only screen and (max-width:749px) {
+@media only screen and (max-width:1000px) {
   .bgimg1 {
     display: none !important;
   min-height: 100px;
@@ -197,4 +197,6 @@ ul {
   }
 }
 
-.
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
