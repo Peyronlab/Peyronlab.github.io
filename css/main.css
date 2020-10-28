@@ -62,6 +62,10 @@ div.container {
   margin-right: auto;
  object-fit: cover;}
 
+nav {
+    max-height: 30px;
+
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
